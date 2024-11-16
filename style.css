@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: url(blackdiary.jpg) center / cover no-repeat;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 10px;
+}
+
+.navbar{
+  display: flex;
+  padding: 22px 0px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navbar .logo{
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navbar .logo img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar .logo h2 {
+  color:aliceblue;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.navbar .links{
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar .links a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar .links a:hover{
+  color: whitesmoke;
+}
+
+.navbar .login-btn{
+  border: none;
+  outline: none;
+  color: rgb(43, 157, 202);
+  background: whitesmoke;
+  font-size: 1rem;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+.form-popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 720px;
+  width: 100%;
+  background: whitesmoke;
+  border: 2px solid whitesmoke;
+  transform: translate(-50%, -50%);
+}
+
+.form-popup .form-box{
+  display: flex;
+}
+
+.form-popup .close-btn{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #878484;
+  cursor: pointer;
+}
+
+.form-box .form-details{
+  max-width: 330px;
+  width: 100%;
+  color: aliceblue;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(pen1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form-box h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-box .form-content{
+  width: 100%;
+  padding: 35px;
+}
+
+form .input-field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+form .input-field input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 0.95rem;
+  border-radius: 3px;
+  border: 1px solid aliceblue;
+}
+
+.input-field input:focus{
+  border-color: rgb(41, 53, 20);;
+}
+
+.input-field input:is(:focus, :valid){
+  padding: 16px 15px 0;
+}
+
+form .input-field label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #717171;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid)~ label{
+  color: black;
+  font-size: 0.75rem;
+  transform: translateY(-120%);
+}
+
+.form-box a {
+  color: rgb(41, 53, 20);
+  text-decoration: none;
+}
+
+.form-box a:hover{
+  text-decoration: underline;
+}
+
+.form-box .forgot-password{
+  display: inline-flex;
+  margin-top: 14px;
+  font-size: 0.95rem;
+}
+
+form button{
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 0;
+  margin: 25px 0;
+  color:aliceblue;
+  cursor: pointer;
+  background: rgb(111, 114, 105);
+  transition: o.2s ease;
+}
+
+form button:hover{
+  background: rgb(119, 124, 108);
+}
+
+.form-box .bottom-link{
+  text-align: center;
+}
+
